@@ -66,6 +66,7 @@ hexagon "Level 8.4" as L8S2
 hexagon "Level 8.5" as L8S3
 rectangle "Level 9: Darkened Suburbs" as L9
 hexagon "Level 9.1" as L9S1
+hexagon "Level 9.6" as L9S2
 rectangle "Level 10: The Bumper Crop" as L10
 rectangle "Level 11: Concrete Jungle" as L11
 rectangle "Level 12: MATRIX" as L12
@@ -263,6 +264,7 @@ rectangle "Level 199" as L199
 rectangle "Level 200" as L200
 rectangle "Level 201" as L201
 rectangle "Level 202" as L202
+hexagon "Level 202.1" as L202S1
 rectangle "Level 203" as L203
 rectangle "Level 204" as L204
 rectangle "Level 205" as L205
@@ -1068,10 +1070,11 @@ usecase "The Attic" as ATTIC
 usecase "The Whisper" as WHISPER
 usecase "Level φ: "The Golden Spiral"" as PHI2
 usecase "The Hub" as HUB
+usecase "The Hive" as HIVE
 usecase "The Deep End" as TDE
 node "The Void" as TheVoid
 usecase "Level REDACTED: The Downrooms" as LREDACTED
-node "Variety/Majority Levels" as MISC
+node "Random/Variety Levels" as MISC
 
 ' CONNECTIONS
 
@@ -1441,3 +1444,110 @@ node "Variety/Majority Levels" as MISC
     L655 --> L330
     L655 --> L37
     L655 --> L3S3
+
+    ' speariv350
+
+    L3 --> L41
+		L7 --> L41
+		L630 --> L41
+		L10 --> L41
+		L35 --> L41
+		L283 --> L41
+		L11 --> L41
+		L32 --> L41
+		L85 --> L41
+		L40 --> L41
+		L154 --> L41
+		L690 --> L41
+		L50 --> L41
+		L91 --> L41
+		L997 --> L41
+
+		L41 ---> L4 
+		L41 ---> L16
+		L41 ---> L42
+		L41 ---> L59
+		L41 --> L2
+		L41 --> L6
+		L41 --> L14
+		L41 --> L22
+		L41 --> L9S2
+		L41 --> L17
+		L41 --> L207
+
+		L0 <==> L42
+		L5 ---> L42
+		L9 ---> L42
+		L11 ---> L42
+		L93 ---> L42
+		L99 --> L42
+		L21 ---> L42
+		L26 ---> L42
+		L27 ---> L42
+		L28 ---> L42
+		L33 ---> L42
+		L36 ---> L42
+		L41 ---> L42
+		L43 ---> L42
+
+		L42 <==> MISC
+		L42 <==> L398
+		L42 --> TheVoid
+
+		MISC --> L43 : "Trains with Oceanic-items"
+		L42 --> L43
+		L32 --> L43
+		L54 --> L43
+		L30 --> L43
+		L301 --> L43
+
+		L43 --> L44
+		L43 --> L34
+		L43 --> L278
+		L43 --> L88
+		L43 --> MISC
+
+		MISC --> L44 : "Doors"
+		L202S1 --> L44
+		L202 -.-> L44
+		L38S1 --> L44
+
+		L44 --> L30
+		L44 --> L37
+		L44 --> L6
+
+		L455 --> L45
+		L13 --> L45
+		L39 --> L45
+		LURKING --> L45
+		L9S2 --> L45
+		L887 --> L45
+
+		L45 --> HIVE
+		L45 --> L110
+		L45 --> L974
+		L45 --> L7
+		L45 --> L0
+		L45 --> L8
+		L45 --> L46
+		L45 --> L49
+
+		L21 --> L46
+		L45 --> L46
+		L50 --> L46
+
+		L46 --> L47
+		L46 --> L1
+		L46 --> L22
+		L46 --> L37
+		L46 --> L671
+		L46 --> L207
+		L46 --> L0
+
+		L4 <==> L47
+		L4S2 <==> L47
+		L46 --> L47
+
+		L47 --> L0
+
+		MISC --> L48 : "???"
