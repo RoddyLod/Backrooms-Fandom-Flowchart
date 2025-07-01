@@ -164,6 +164,7 @@ rectangle "Level 99" as L99
 rectangle "Level 100" as L100
 rectangle "Level 101" as L101
 rectangle "Level 102" as L102
+hexagon "Level 102.1" as L102S1
 rectangle "Level 103" as L103
 rectangle "Level 104" as L104
 rectangle "Level 105" as L105
@@ -393,6 +394,7 @@ rectangle "Level 327" as L327
 rectangle "Level 328" as L328
 rectangle "Level 329" as L329
 rectangle "Level 330" as L330
+hexagon "Level 330.1" as L330S1
 rectangle "Level 331" as L331
 rectangle "Level 332" as L332
 rectangle "Level 333" as L333
@@ -1071,6 +1073,8 @@ usecase "The Whisper" as WHISPER
 usecase "Level φ: "The Golden Spiral"" as PHI2
 usecase "The Hub" as HUB
 usecase "The Hive" as HIVE
+usecase "The Delta Mall" as DELTAMALL
+usecase "The Beginning" as BEGINNING
 usecase "The Deep End" as TDE
 node "The Void" as TheVoid
 usecase "Level REDACTED: The Downrooms" as LREDACTED
@@ -1551,3 +1555,52 @@ node "Random/Variety Levels" as MISC
 		L47 --> L0
 
 		MISC --> L48 : "???"
+
+    ' dodecah12
+
+    L100 --> L101
+    L100 --> L110
+    L100 --> L178
+    L100 --> L989
+    L100 --> L990
+    L100 --> TheVoid
+    L101 --> L0
+    L101 --> L53
+    L101 --> L86
+    L101 --> L102
+    L102 --> L2
+    L102 --> L30
+    L102 --> L48
+    L102 <==> L102S1
+    L102 --> L330
+    L102 --> L416
+    L102 --> L597
+    L105 --> L200
+    L106 --> L45
+    L106 --> L255
+    L107 --> L330S1
+    L107 --> L499
+    L107 --> DELTAMALL
+    L108 --> L109
+    L108 --> L110
+    L108 --> L154
+    L108 --> L205
+    L109 --> L2
+    L109 --> L20
+    L109 --> L34
+    L110 --> L111
+    L110 --> L182
+    L110 --> L207
+    L110 --> L630
+    L110 --> L888
+    L111  --> L1
+    L111  --> L2
+    L111  --> L4
+    L111  --> L8
+    L111  --> L16
+    L111  --> L32
+    L111  --> L64
+    L111  --> L139
+    L111  --> L404
+    L111  --> L410
+    L111  <==> BEGINNING
