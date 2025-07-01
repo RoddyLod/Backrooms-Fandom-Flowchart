@@ -62,6 +62,7 @@ hexagon "Level 7.7" as L7S3
 rectangle "Level 8: Cave System" as L8
 hexagon "Level 8.2" as L8S1
 hexagon "Level 8.4" as L8S2
+hexagon "Level 8.5" as L8S3
 rectangle "Level 9: Darkened Suburbs" as L9
 hexagon "Level 9.1" as L9S1
 rectangle "Level 10: The Bumper Crop" as L10
@@ -714,6 +715,7 @@ rectangle "Level 652" as L652
 rectangle "Level 653" as L653
 rectangle "Level 654" as L654
 rectangle "Level 655" as L655
+hexagon "Level 655.5" as L655S1
 rectangle "Level 656" as L656
 rectangle "Level 657" as L657
 rectangle "Level 658" as L658
@@ -1158,7 +1160,7 @@ node "Variety/Majority Levels" as MISC
     L7 --> L833
 
     L8 <-.-> L9
-    L8 --> MISC
+    L8 --> MISC : "Aquatic Levels"
 
     L9 --> L8S2
     L9 --> L11
@@ -1299,6 +1301,104 @@ node "Variety/Majority Levels" as MISC
     L30 --> L597
     L30 --> L357
 
+    L61 --> L68
+    L61 --> L62
+    L61 --> L711
+    L61 --> L187
+    L61 --> L121
+    L61 --> L695
+    L61 --> L610
+    L61 --> MISC : "Structure-specific Levels"
+
+    L62 --> L57
+    L62 --> L63
+
+    L63 --> L6
+    L63 --> TheVoid
+    L63 --> L64
+
+    L64 <==> L630
+    L64 <==> L8
+    L64 --> L65
+    L64 --> L117
+    L64 --> L87
+
+    L65 --> L1
+    L65 --> L17
+
+    L66 --> MISC
+    L66 --> L62
+    L66 --> L63
+    L66 --> L64
+    L66 --> L65
+    L66 --> L67
+    L66 --> L68
+    L66 --> L69
+    L66 --> L70
+    L66 --> L71
+    L66 --> L72
+
+    L67 --> L71
+    L67 --> L375
+    L67 --> MISC
+
+    L68 -.-> L69
+
+    L69 <==> L11
+    L69 --> L143
+    L69 --> L690
+    L69 --> L717
+    L69 --> L70
+    L69 --> L129
+    L69 --> L66
+
+    L70 <==> L630
+    L70 --> L10
+    L70 --> L118
+    L70 --> TheVoid 
+    L70 --> L71
+
+    L71 --> L72
+
+    L72 --> L1
+    L72 --> L10
+    L72 --> L75
+    L72 --> L73
+
+    L73 --> L22
+    L73 --> L23
+    L73 --> L28
+    L73 --> L39
+    L73 --> L499
+    L73 --> L597
+    L73 --> L67
+    L73 --> L76
+
+    L74 --> L124
+
+    L75 --> L234
+    L75 --> L375
+
+    L76 --> L1
+    L76 --> L797
+    L76 --> TheVoid
+
+    L77 --> L107
+
+    L78 --> L79
+    L78 --> L768
+    L78 --> L701
+
+    L79 --> L2
+    L79 --> L37
+    L79 --> L11
+    L79 --> L27
+    L79 --> L6
+    L79 --> L511
+
+    L80 --> L810
+    L80 --> L1
+
     L37 --> L4
     L37 --> L34
     L37 <==> L37S1
@@ -1309,8 +1409,34 @@ node "Variety/Majority Levels" as MISC
 
     TheVoid --> LREDACTED
 
-    HUB --> MISC
+    HUB --> MISC : "Level Keys"
     HUB --> L37
     HUB <==> L154
 
     TDE -.-> L0
+
+    ' heyheyhey0749_09363
+
+    L255 -.-> L7
+
+    L45 --> L355
+    L630 --> L355
+    L354 --> L355
+    L355 --> L106
+    L355 --> L8
+    L355 --> L8S3
+
+    L156 --> L655
+    L655 --> L5
+    L655 --> L20
+    L655 --> L156
+    L655 --> L330
+    L655 --> L28
+    L655 --> L877
+    L655 <==> L655S1
+
+    L986 --> L655
+    L655 --> L7
+    L655 --> L330
+    L655 --> L37
+    L655 --> L3S3
