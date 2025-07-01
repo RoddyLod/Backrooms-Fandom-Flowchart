@@ -1,0 +1,1316 @@
+@startuml
+
+' CUSTOMIZATION
+
+skinparam backgroundColor grey
+skinparam defaultTextAlignment center
+
+skinparam rectangle {
+  BackgroundColor black
+  BorderColor white
+  FontColor white
+  RoundCorner 15
+}
+skinparam hexagon {
+  BackgroundColor black
+  BorderColor white
+  FontColor white
+}
+skinparam node {
+  BackgroundColor black
+  BorderColor white
+  FontColor white
+  RoundCorner 15
+}
+skinparam usecase {
+  BackgroundColor black
+  BorderColor white
+  FontColor white
+  RoundCorner 15
+}
+skinparam database {
+  BackgroundColor black
+  BorderColor white
+  FontColor white
+  RoundCorner 15
+}
+
+' IDENTIFIERS
+
+database "The Frontrooms" as TheFrontrooms
+rectangle "Level 0: The Lobby" as L0
+rectangle "Level 1: Parking Zone" as L1
+hexagon "Level 1.61" as PHI
+rectangle "Level 2: Pipe Dreams" as L2
+rectangle "Level 3: Electrical Station" as L3
+hexagon "Level 3.14" as PI
+hexagon "Level 3.53" as L3S2
+hexagon "Level 3.6" as L3S3
+rectangle "Level 4: The Abandoned Office" as L4
+hexagon "Level 4.11" as L4S1
+hexagon "Level 4.3" as L4S2
+rectangle "Level 5: Terror Hotel" as L5
+hexagon "Level 5.1" as L5S1
+hexagon "Level 5.3" as L5S2
+rectangle "Level 6: Lights Out" as L6
+hexagon "Level 6.1" as L6S1
+hexagon "Level 6.28" as TAU
+rectangle "Level 7: Thalassophobia" as L7
+hexagon "Level 7.1" as L7S1
+hexagon "Level 7.5" as L7S2
+hexagon "Level 7.7" as L7S3
+rectangle "Level 8: Cave System" as L8
+hexagon "Level 8.2" as L8S1
+hexagon "Level 8.4" as L8S2
+rectangle "Level 9: Darkened Suburbs" as L9
+hexagon "Level 9.1" as L9S1
+rectangle "Level 10: The Bumper Crop" as L10
+rectangle "Level 11: Concrete Jungle" as L11
+rectangle "Level 12: MATRIX" as L12
+rectangle "Level 13: Vitrum Madness" as L13
+rectangle "Level 14: Inhospitality" as L14
+rectangle "Level 15: Futuristic Halls" as L15
+rectangle "Level 16: J. Barry Mental Asylum" as L16
+rectangle "Level 17" as L17
+rectangle "Level 18" as L18
+rectangle "Level 19" as L19
+rectangle "Level 20" as L20
+hexagon "Level 20.1" as L20S1
+rectangle "Level 21" as L21
+rectangle "Level 22" as L22
+rectangle "Level 23" as L23
+rectangle "Level 24" as L24
+rectangle "Level 25" as L25
+rectangle "Level 26" as L26
+hexagon "Level 26.1" as L26S1
+rectangle "Level 27: Ligneous Desolation" as L27
+rectangle "Level 28" as L28
+rectangle "Level 29" as L29
+rectangle "Level 30: Aquatic Cycles" as L30
+rectangle "Level 31" as L31
+rectangle "Level 32" as L32
+rectangle "Level 33" as L33
+rectangle "Level 34" as L34
+rectangle "Level 35" as L35
+rectangle "Level 36" as L36
+rectangle "Level 37: Sublimity" as L37
+hexagon "Level 37.1: The Deep End" as L37S1
+rectangle "Level 38" as L38
+hexagon "Level 38.1" as L38S1
+rectangle "Level 39" as L39
+rectangle "Level 40" as L40
+rectangle "Level 41" as L41
+rectangle "Level 42" as L42
+rectangle "Level 43" as L43
+rectangle "Level 44" as L44
+rectangle "Level 45" as L45
+rectangle "Level 46" as L46
+rectangle "Level 47" as L47
+rectangle "Level 48" as L48
+rectangle "Level 49" as L49
+rectangle "Level 50" as L50
+rectangle "Level 51" as L51
+rectangle "Level 52" as L52
+rectangle "Level 53" as L53
+rectangle "Level 54" as L54
+rectangle "Level 55" as L55
+rectangle "Level 56" as L56
+rectangle "Level 57" as L57
+rectangle "Level 58" as L58
+rectangle "Level 59" as L59
+rectangle "Level 60" as L60
+rectangle "Level 61" as L61
+rectangle "Level 62" as L62
+rectangle "Level 63" as L63
+rectangle "Level 64" as L64
+rectangle "Level 65" as L65
+rectangle "Level 66" as L66
+rectangle "Level 67" as L67
+rectangle "Level 68" as L68
+rectangle "Level 69" as L69
+rectangle "Level 70" as L70
+rectangle "Level 71" as L71
+rectangle "Level 72" as L72
+rectangle "Level 73" as L73
+rectangle "Level 74" as L74
+rectangle "Level 75" as L75
+rectangle "Level 76" as L76
+rectangle "Level 77" as L77
+rectangle "Level 78" as L78
+rectangle "Level 79" as L79
+rectangle "Level 80" as L80
+rectangle "Level 81" as L81
+rectangle "Level 82" as L82
+rectangle "Level 83" as L83
+rectangle "Level 84" as L84
+rectangle "Level 85" as L85
+rectangle "Level 86" as L86
+rectangle "Level 87" as L87
+rectangle "Level 88" as L88
+rectangle "Level 89" as L89
+rectangle "Level 90" as L90
+rectangle "Level 91" as L91
+rectangle "Level 92" as L92
+rectangle "Level 93" as L93
+rectangle "Level 94" as L94
+rectangle "Level 95" as L95
+rectangle "Level 96" as L96
+rectangle "Level 97" as L97
+rectangle "Level 98" as L98
+rectangle "Level 99" as L99
+rectangle "Level 100" as L100
+rectangle "Level 101" as L101
+rectangle "Level 102" as L102
+rectangle "Level 103" as L103
+rectangle "Level 104" as L104
+rectangle "Level 105" as L105
+rectangle "Level 106" as L106
+rectangle "Level 107" as L107
+rectangle "Level 108" as L108
+rectangle "Level 109" as L109
+rectangle "Level 110" as L110
+rectangle "Level 111" as L111
+rectangle "Level 112" as L112
+rectangle "Level 113" as L113
+rectangle "Level 114" as L114
+rectangle "Level 115" as L115
+rectangle "Level 116" as L116
+rectangle "Level 117" as L117
+rectangle "Level 118" as L118
+rectangle "Level 119" as L119
+rectangle "Level 120" as L120
+rectangle "Level 121" as L121
+rectangle "Level 122" as L122
+rectangle "Level 123" as L123
+rectangle "Level 124" as L124
+rectangle "Level 125" as L125
+rectangle "Level 126" as L126
+rectangle "Level 127" as L127
+rectangle "Level 128" as L128
+rectangle "Level 129" as L129
+rectangle "Level 130" as L130
+rectangle "Level 131" as L131
+rectangle "Level 132" as L132
+rectangle "Level 133" as L133
+rectangle "Level 134" as L134
+rectangle "Level 135" as L135
+rectangle "Level 136" as L136
+rectangle "Level 137" as L137
+rectangle "Level 138" as L138
+rectangle "Level 139" as L139
+rectangle "Level 140" as L140
+rectangle "Level 141" as L141
+rectangle "Level 142" as L142
+rectangle "Level 143" as L143
+rectangle "Level 144" as L144
+rectangle "Level 145" as L145
+rectangle "Level 146" as L146
+rectangle "Level 147" as L147
+rectangle "Level 148" as L148
+rectangle "Level 149" as L149
+rectangle "Level 150" as L150
+rectangle "Level 151" as L151
+rectangle "Level 152" as L152
+rectangle "Level 153" as L153
+rectangle "Level 154" as L154
+rectangle "Level 155" as L155
+rectangle "Level 156" as L156
+rectangle "Level 157" as L157
+rectangle "Level 158" as L158
+rectangle "Level 159" as L159
+rectangle "Level 160" as L160
+rectangle "Level 161" as L161
+rectangle "Level 162" as L162
+rectangle "Level 163" as L163
+rectangle "Level 164" as L164
+rectangle "Level 165" as L165
+rectangle "Level 166" as L166
+rectangle "Level 167" as L167
+rectangle "Level 168" as L168
+rectangle "Level 169" as L169
+rectangle "Level 170" as L170
+rectangle "Level 171" as L171
+rectangle "Level 172" as L172
+rectangle "Level 173" as L173
+rectangle "Level 174" as L174
+rectangle "Level 175" as L175
+rectangle "Level 176" as L176
+rectangle "Level 177" as L177
+rectangle "Level 178" as L178
+rectangle "Level 179" as L179
+rectangle "Level 180" as L180
+rectangle "Level 181" as L181
+rectangle "Level 182" as L182
+rectangle "Level 183" as L183
+rectangle "Level 184" as L184
+rectangle "Level 185" as L185
+rectangle "Level 186" as L186
+rectangle "Level 187" as L187
+rectangle "Level 188" as L188
+rectangle "Level 189" as L189
+rectangle "Level 190" as L190
+rectangle "Level 191" as L191
+rectangle "Level 192" as L192
+rectangle "Level 193" as L193
+rectangle "Level 194" as L194
+rectangle "Level 195" as L195
+rectangle "Level 196" as L196
+rectangle "Level 197" as L197
+rectangle "Level 198" as L198
+rectangle "Level 199" as L199
+rectangle "Level 200" as L200
+rectangle "Level 201" as L201
+rectangle "Level 202" as L202
+rectangle "Level 203" as L203
+rectangle "Level 204" as L204
+rectangle "Level 205" as L205
+rectangle "Level 206" as L206
+rectangle "Level 207" as L207
+rectangle "Level 208" as L208
+rectangle "Level 209" as L209
+rectangle "Level 210" as L210
+rectangle "Level 211" as L211
+rectangle "Level 212" as L212
+rectangle "Level 213" as L213
+rectangle "Level 214" as L214
+rectangle "Level 215" as L215
+rectangle "Level 216" as L216
+rectangle "Level 217" as L217
+rectangle "Level 218" as L218
+rectangle "Level 219" as L219
+rectangle "Level 220" as L220
+rectangle "Level 221" as L221
+rectangle "Level 222" as L222
+rectangle "Level 223" as L223
+rectangle "Level 224" as L224
+rectangle "Level 225" as L225
+rectangle "Level 226" as L226
+rectangle "Level 227" as L227
+rectangle "Level 228" as L228
+rectangle "Level 229" as L229
+rectangle "Level 230" as L230
+rectangle "Level 231" as L231
+rectangle "Level 232" as L232
+rectangle "Level 233" as L233
+rectangle "Level 234" as L234
+rectangle "Level 235" as L235
+rectangle "Level 236" as L236
+rectangle "Level 237" as L237
+rectangle "Level 238" as L238
+rectangle "Level 239" as L239
+rectangle "Level 240" as L240
+rectangle "Level 241" as L241
+rectangle "Level 242" as L242
+rectangle "Level 243" as L243
+rectangle "Level 244" as L244
+rectangle "Level 245" as L245
+rectangle "Level 246" as L246
+rectangle "Level 247" as L247
+rectangle "Level 248" as L248
+rectangle "Level 249" as L249
+rectangle "Level 250" as L250
+rectangle "Level 251" as L251
+rectangle "Level 252" as L252
+rectangle "Level 253" as L253
+rectangle "Level 254" as L254
+rectangle "Level 255" as L255
+rectangle "Level 256" as L256
+rectangle "Level 257" as L257
+rectangle "Level 258" as L258
+rectangle "Level 259" as L259
+rectangle "Level 260" as L260
+rectangle "Level 261" as L261
+rectangle "Level 262" as L262
+rectangle "Level 263" as L263
+rectangle "Level 264" as L264
+rectangle "Level 265" as L265
+rectangle "Level 266" as L266
+rectangle "Level 267" as L267
+rectangle "Level 268" as L268
+rectangle "Level 269" as L269
+rectangle "Level 270" as L270
+rectangle "Level 271" as L271
+rectangle "Level 272" as L272
+rectangle "Level 273" as L273
+rectangle "Level 274" as L274
+rectangle "Level 275" as L275
+rectangle "Level 276" as L276
+rectangle "Level 277" as L277
+rectangle "Level 278" as L278
+rectangle "Level 279" as L279
+rectangle "Level 280" as L280
+rectangle "Level 281" as L281
+rectangle "Level 282" as L282
+rectangle "Level 283" as L283
+rectangle "Level 284" as L284
+rectangle "Level 285" as L285
+rectangle "Level 286" as L286
+rectangle "Level 287" as L287
+rectangle "Level 288" as L288
+rectangle "Level 289" as L289
+rectangle "Level 290" as L290
+rectangle "Level 291" as L291
+rectangle "Level 292" as L292
+rectangle "Level 293" as L293
+rectangle "Level 294" as L294
+rectangle "Level 295" as L295
+rectangle "Level 296" as L296
+rectangle "Level 297" as L297
+rectangle "Level 298" as L298
+rectangle "Level 299" as L299
+rectangle "Level 300" as L300
+rectangle "Level 301" as L301
+rectangle "Level 302" as L302
+rectangle "Level 303" as L303
+rectangle "Level 304" as L304
+rectangle "Level 305" as L305
+rectangle "Level 306" as L306
+rectangle "Level 307" as L307
+rectangle "Level 308" as L308
+rectangle "Level 309" as L309
+rectangle "Level 310" as L310
+rectangle "Level 311" as L311
+rectangle "Level 312" as L312
+rectangle "Level 313" as L313
+rectangle "Level 314" as L314
+rectangle "Level 315" as L315
+rectangle "Level 316" as L316
+rectangle "Level 317" as L317
+rectangle "Level 318" as L318
+rectangle "Level 319" as L319
+rectangle "Level 320" as L320
+rectangle "Level 321" as L321
+rectangle "Level 322" as L322
+rectangle "Level 323" as L323
+rectangle "Level 324" as L324
+rectangle "Level 325" as L325
+rectangle "Level 326" as L326
+rectangle "Level 327" as L327
+rectangle "Level 328" as L328
+rectangle "Level 329" as L329
+rectangle "Level 330" as L330
+rectangle "Level 331" as L331
+rectangle "Level 332" as L332
+rectangle "Level 333" as L333
+rectangle "Level 334" as L334
+rectangle "Level 335" as L335
+rectangle "Level 336" as L336
+rectangle "Level 337" as L337
+rectangle "Level 338" as L338
+rectangle "Level 339" as L339
+rectangle "Level 340" as L340
+rectangle "Level 341" as L341
+rectangle "Level 342" as L342
+rectangle "Level 343" as L343
+rectangle "Level 344" as L344
+rectangle "Level 345" as L345
+rectangle "Level 346" as L346
+rectangle "Level 347" as L347
+rectangle "Level 348" as L348
+rectangle "Level 349" as L349
+rectangle "Level 350" as L350
+rectangle "Level 351" as L351
+rectangle "Level 352" as L352
+rectangle "Level 353" as L353
+rectangle "Level 354" as L354
+rectangle "Level 355" as L355
+rectangle "Level 356" as L356
+rectangle "Level 357" as L357
+rectangle "Level 358" as L358
+rectangle "Level 359" as L359
+rectangle "Level 360" as L360
+rectangle "Level 361" as L361
+rectangle "Level 362" as L362
+rectangle "Level 363" as L363
+rectangle "Level 364" as L364
+rectangle "Level 365" as L365
+rectangle "Level 366" as L366
+rectangle "Level 367" as L367
+rectangle "Level 368" as L368
+rectangle "Level 369" as L369
+rectangle "Level 370" as L370
+rectangle "Level 371" as L371
+rectangle "Level 372" as L372
+rectangle "Level 373" as L373
+rectangle "Level 374" as L374
+rectangle "Level 375" as L375
+rectangle "Level 376" as L376
+rectangle "Level 377" as L377
+rectangle "Level 378" as L378
+rectangle "Level 379" as L379
+rectangle "Level 380" as L380
+rectangle "Level 381" as L381
+rectangle "Level 382" as L382
+rectangle "Level 383" as L383
+rectangle "Level 384" as L384
+rectangle "Level 385" as L385
+rectangle "Level 386" as L386
+rectangle "Level 387" as L387
+rectangle "Level 388" as L388
+rectangle "Level 389" as L389
+rectangle "Level 390" as L390
+rectangle "Level 391" as L391
+rectangle "Level 392" as L392
+rectangle "Level 393" as L393
+rectangle "Level 394" as L394
+rectangle "Level 395" as L395
+rectangle "Level 396" as L396
+rectangle "Level 397" as L397
+rectangle "Level 398" as L398
+rectangle "Level 399" as L399
+rectangle "Level 400" as L400
+rectangle "Level 401" as L401
+rectangle "Level 402" as L402
+rectangle "Level 403" as L403
+rectangle "Level 404" as L404
+rectangle "Level 405" as L405
+rectangle "Level 406" as L406
+rectangle "Level 407" as L407
+rectangle "Level 408" as L408
+rectangle "Level 409" as L409
+rectangle "Level 410" as L410
+rectangle "Level 411" as L411
+rectangle "Level 412" as L412
+rectangle "Level 413" as L413
+rectangle "Level 414" as L414
+rectangle "Level 415" as L415
+rectangle "Level 416" as L416
+rectangle "Level 417" as L417
+rectangle "Level 418" as L418
+rectangle "Level 419" as L419
+rectangle "Level 420" as L420
+rectangle "Level 421" as L421
+rectangle "Level 422" as L422
+rectangle "Level 423" as L423
+rectangle "Level 424" as L424
+rectangle "Level 425" as L425
+rectangle "Level 426" as L426
+rectangle "Level 427" as L427
+rectangle "Level 428" as L428
+rectangle "Level 429" as L429
+rectangle "Level 430" as L430
+rectangle "Level 431" as L431
+rectangle "Level 432" as L432
+rectangle "Level 433" as L433
+rectangle "Level 434" as L434
+rectangle "Level 435" as L435
+rectangle "Level 436" as L436
+rectangle "Level 437" as L437
+rectangle "Level 438" as L438
+rectangle "Level 439" as L439
+rectangle "Level 440" as L440
+rectangle "Level 441" as L441
+rectangle "Level 442" as L442
+rectangle "Level 443" as L443
+rectangle "Level 444" as L444
+rectangle "Level 445" as L445
+rectangle "Level 446" as L446
+rectangle "Level 447" as L447
+rectangle "Level 448" as L448
+rectangle "Level 449" as L449
+rectangle "Level 450" as L450
+rectangle "Level 451" as L451
+rectangle "Level 452" as L452
+rectangle "Level 453" as L453
+rectangle "Level 454" as L454
+rectangle "Level 455" as L455
+rectangle "Level 456" as L456
+rectangle "Level 457" as L457
+rectangle "Level 458" as L458
+rectangle "Level 459" as L459
+rectangle "Level 460" as L460
+rectangle "Level 461" as L461
+rectangle "Level 462" as L462
+rectangle "Level 463" as L463
+rectangle "Level 464" as L464
+rectangle "Level 465" as L465
+rectangle "Level 466" as L466
+rectangle "Level 467" as L467
+rectangle "Level 468" as L468
+rectangle "Level 469" as L469
+rectangle "Level 470" as L470
+rectangle "Level 471" as L471
+rectangle "Level 472" as L472
+rectangle "Level 473" as L473
+rectangle "Level 474" as L474
+rectangle "Level 475" as L475
+rectangle "Level 476" as L476
+rectangle "Level 477" as L477
+rectangle "Level 478" as L478
+rectangle "Level 479" as L479
+rectangle "Level 480" as L480
+rectangle "Level 481" as L481
+rectangle "Level 482" as L482
+rectangle "Level 483" as L483
+rectangle "Level 484" as L484
+rectangle "Level 485" as L485
+rectangle "Level 486" as L486
+rectangle "Level 487" as L487
+rectangle "Level 488" as L488
+rectangle "Level 489" as L489
+rectangle "Level 490" as L490
+rectangle "Level 491" as L491
+rectangle "Level 492" as L492
+rectangle "Level 493" as L493
+rectangle "Level 494" as L494
+rectangle "Level 495" as L495
+rectangle "Level 496" as L496
+rectangle "Level 497" as L497
+rectangle "Level 498" as L498
+rectangle "Level 499" as L499
+rectangle "Level 500" as L500
+rectangle "Level 501" as L501
+rectangle "Level 502" as L502
+rectangle "Level 503" as L503
+rectangle "Level 504" as L504
+rectangle "Level 505" as L505
+rectangle "Level 506" as L506
+rectangle "Level 507" as L507
+rectangle "Level 508" as L508
+rectangle "Level 509" as L509
+rectangle "Level 510" as L510
+rectangle "Level 511" as L511
+rectangle "Level 512" as L512
+rectangle "Level 513" as L513
+rectangle "Level 514" as L514
+rectangle "Level 515" as L515
+rectangle "Level 516" as L516
+rectangle "Level 517" as L517
+rectangle "Level 518" as L518
+rectangle "Level 519" as L519
+rectangle "Level 520" as L520
+rectangle "Level 521" as L521
+rectangle "Level 522" as L522
+rectangle "Level 523" as L523
+rectangle "Level 524" as L524
+rectangle "Level 525" as L525
+rectangle "Level 526" as L526
+rectangle "Level 527" as L527
+rectangle "Level 528" as L528
+rectangle "Level 529" as L529
+rectangle "Level 530" as L530
+rectangle "Level 531" as L531
+rectangle "Level 532" as L532
+rectangle "Level 533" as L533
+rectangle "Level 534" as L534
+rectangle "Level 535" as L535
+rectangle "Level 536" as L536
+rectangle "Level 537" as L537
+rectangle "Level 538" as L538
+rectangle "Level 539" as L539
+rectangle "Level 540" as L540
+rectangle "Level 541" as L541
+rectangle "Level 542" as L542
+rectangle "Level 543" as L543
+rectangle "Level 544" as L544
+rectangle "Level 545" as L545
+rectangle "Level 546" as L546
+rectangle "Level 547" as L547
+rectangle "Level 548" as L548
+rectangle "Level 549" as L549
+rectangle "Level 550" as L550
+rectangle "Level 551" as L551
+rectangle "Level 552" as L552
+rectangle "Level 553" as L553
+rectangle "Level 554" as L554
+rectangle "Level 555" as L555
+rectangle "Level 556" as L556
+rectangle "Level 557" as L557
+rectangle "Level 558" as L558
+rectangle "Level 559" as L559
+rectangle "Level 560" as L560
+rectangle "Level 561" as L561
+rectangle "Level 562" as L562
+rectangle "Level 563" as L563
+rectangle "Level 564" as L564
+rectangle "Level 565" as L565
+rectangle "Level 566" as L566
+rectangle "Level 567" as L567
+rectangle "Level 568" as L568
+rectangle "Level 569" as L569
+rectangle "Level 570" as L570
+rectangle "Level 571" as L571
+rectangle "Level 572" as L572
+rectangle "Level 573" as L573
+rectangle "Level 574" as L574
+rectangle "Level 575" as L575
+rectangle "Level 576" as L576
+rectangle "Level 577" as L577
+rectangle "Level 578" as L578
+rectangle "Level 579" as L579
+rectangle "Level 580" as L580
+rectangle "Level 581" as L581
+rectangle "Level 582" as L582
+rectangle "Level 583" as L583
+rectangle "Level 584" as L584
+rectangle "Level 585" as L585
+rectangle "Level 586" as L586
+rectangle "Level 587" as L587
+rectangle "Level 588" as L588
+rectangle "Level 589" as L589
+rectangle "Level 590" as L590
+rectangle "Level 591" as L591
+rectangle "Level 592" as L592
+rectangle "Level 593" as L593
+rectangle "Level 594" as L594
+rectangle "Level 595" as L595
+rectangle "Level 596" as L596
+rectangle "Level 597" as L597
+rectangle "Level 598" as L598
+rectangle "Level 599" as L599
+rectangle "Level 600" as L600
+rectangle "Level 601" as L601
+rectangle "Level 602" as L602
+rectangle "Level 603" as L603
+rectangle "Level 604" as L604
+rectangle "Level 605" as L605
+rectangle "Level 606" as L606
+rectangle "Level 607" as L607
+rectangle "Level 608" as L608
+rectangle "Level 609" as L609
+rectangle "Level 610" as L610
+rectangle "Level 611" as L611
+rectangle "Level 612" as L612
+rectangle "Level 613" as L613
+rectangle "Level 614" as L614
+rectangle "Level 615" as L615
+rectangle "Level 616" as L616
+rectangle "Level 617" as L617
+rectangle "Level 618" as L618
+rectangle "Level 619" as L619
+rectangle "Level 620" as L620
+rectangle "Level 621" as L621
+rectangle "Level 622" as L622
+rectangle "Level 623" as L623
+rectangle "Level 624" as L624
+rectangle "Level 625" as L625
+rectangle "Level 626" as L626
+rectangle "Level 627" as L627
+rectangle "Level 628" as L628
+rectangle "Level 629" as L629
+rectangle "Level 630" as L630
+rectangle "Level 631" as L631
+rectangle "Level 632" as L632
+rectangle "Level 633" as L633
+rectangle "Level 634" as L634
+rectangle "Level 635" as L635
+rectangle "Level 636" as L636
+rectangle "Level 637" as L637
+rectangle "Level 638" as L638
+rectangle "Level 639" as L639
+rectangle "Level 640" as L640
+rectangle "Level 641" as L641
+rectangle "Level 642" as L642
+rectangle "Level 643" as L643
+rectangle "Level 644" as L644
+rectangle "Level 645" as L645
+rectangle "Level 646" as L646
+rectangle "Level 647" as L647
+rectangle "Level 648" as L648
+rectangle "Level 649" as L649
+rectangle "Level 650" as L650
+rectangle "Level 651" as L651
+rectangle "Level 652" as L652
+rectangle "Level 653" as L653
+rectangle "Level 654" as L654
+rectangle "Level 655" as L655
+rectangle "Level 656" as L656
+rectangle "Level 657" as L657
+rectangle "Level 658" as L658
+rectangle "Level 659" as L659
+rectangle "Level 660" as L660
+rectangle "Level 661" as L661
+rectangle "Level 662" as L662
+rectangle "Level 663" as L663
+rectangle "Level 664" as L664
+rectangle "Level 665" as L665
+rectangle "Level 666" as L666
+rectangle "Level 667" as L667
+rectangle "Level 668" as L668
+rectangle "Level 669" as L669
+rectangle "Level 670" as L670
+rectangle "Level 671" as L671
+rectangle "Level 672" as L672
+rectangle "Level 673" as L673
+rectangle "Level 674" as L674
+rectangle "Level 675" as L675
+rectangle "Level 676" as L676
+rectangle "Level 677" as L677
+rectangle "Level 678" as L678
+rectangle "Level 679" as L679
+rectangle "Level 680" as L680
+rectangle "Level 681" as L681
+rectangle "Level 682" as L682
+rectangle "Level 683" as L683
+rectangle "Level 684" as L684
+rectangle "Level 685" as L685
+rectangle "Level 686" as L686
+rectangle "Level 687" as L687
+rectangle "Level 688" as L688
+rectangle "Level 689" as L689
+rectangle "Level 690" as L690
+rectangle "Level 691" as L691
+rectangle "Level 692" as L692
+rectangle "Level 693" as L693
+rectangle "Level 694" as L694
+rectangle "Level 695" as L695
+rectangle "Level 696" as L696
+rectangle "Level 697" as L697
+rectangle "Level 698" as L698
+rectangle "Level 699" as L699
+rectangle "Level 700" as L700
+rectangle "Level 701" as L701
+rectangle "Level 702" as L702
+rectangle "Level 703" as L703
+rectangle "Level 704" as L704
+rectangle "Level 705" as L705
+rectangle "Level 706" as L706
+rectangle "Level 707" as L707
+rectangle "Level 708" as L708
+rectangle "Level 709" as L709
+rectangle "Level 710" as L710
+rectangle "Level 711" as L711
+rectangle "Level 712" as L712
+rectangle "Level 713" as L713
+rectangle "Level 714" as L714
+rectangle "Level 715" as L715
+rectangle "Level 716" as L716
+rectangle "Level 717" as L717
+rectangle "Level 718" as L718
+rectangle "Level 719" as L719
+rectangle "Level 720" as L720
+rectangle "Level 721" as L721
+rectangle "Level 722" as L722
+rectangle "Level 723" as L723
+rectangle "Level 724" as L724
+rectangle "Level 725" as L725
+rectangle "Level 726" as L726
+rectangle "Level 727" as L727
+rectangle "Level 728" as L728
+rectangle "Level 729" as L729
+rectangle "Level 730" as L730
+rectangle "Level 731" as L731
+rectangle "Level 732" as L732
+rectangle "Level 733" as L733
+rectangle "Level 734" as L734
+rectangle "Level 735" as L735
+rectangle "Level 736" as L736
+rectangle "Level 737" as L737
+rectangle "Level 738" as L738
+rectangle "Level 739" as L739
+rectangle "Level 740" as L740
+rectangle "Level 741" as L741
+rectangle "Level 742" as L742
+rectangle "Level 743" as L743
+rectangle "Level 744" as L744
+rectangle "Level 745" as L745
+rectangle "Level 746" as L746
+rectangle "Level 747" as L747
+rectangle "Level 748" as L748
+rectangle "Level 749" as L749
+rectangle "Level 750" as L750
+rectangle "Level 751" as L751
+rectangle "Level 752" as L752
+rectangle "Level 753" as L753
+rectangle "Level 754" as L754
+rectangle "Level 755" as L755
+rectangle "Level 756" as L756
+rectangle "Level 757" as L757
+rectangle "Level 758" as L758
+rectangle "Level 759" as L759
+rectangle "Level 760" as L760
+rectangle "Level 761" as L761
+rectangle "Level 762" as L762
+rectangle "Level 763" as L763
+rectangle "Level 764" as L764
+rectangle "Level 765" as L765
+rectangle "Level 766" as L766
+rectangle "Level 767" as L767
+rectangle "Level 768" as L768
+rectangle "Level 769" as L769
+rectangle "Level 770" as L770
+rectangle "Level 771" as L771
+rectangle "Level 772" as L772
+rectangle "Level 773" as L773
+rectangle "Level 774" as L774
+rectangle "Level 775" as L775
+rectangle "Level 776" as L776
+rectangle "Level 777" as L777
+rectangle "Level 778" as L778
+rectangle "Level 779" as L779
+rectangle "Level 780" as L780
+rectangle "Level 781" as L781
+rectangle "Level 782" as L782
+rectangle "Level 783" as L783
+rectangle "Level 784" as L784
+rectangle "Level 785" as L785
+rectangle "Level 786" as L786
+rectangle "Level 787" as L787
+rectangle "Level 788" as L788
+rectangle "Level 789" as L789
+rectangle "Level 790" as L790
+rectangle "Level 791" as L791
+rectangle "Level 792" as L792
+rectangle "Level 793" as L793
+rectangle "Level 794" as L794
+rectangle "Level 795" as L795
+rectangle "Level 796" as L796
+rectangle "Level 797" as L797
+rectangle "Level 798" as L798
+rectangle "Level 799" as L799
+rectangle "Level 800" as L800
+rectangle "Level 801" as L801
+rectangle "Level 802" as L802
+rectangle "Level 803" as L803
+rectangle "Level 804" as L804
+rectangle "Level 805" as L805
+rectangle "Level 806" as L806
+rectangle "Level 807" as L807
+rectangle "Level 808" as L808
+rectangle "Level 809" as L809
+rectangle "Level 810" as L810
+rectangle "Level 811" as L811
+rectangle "Level 812" as L812
+rectangle "Level 813" as L813
+rectangle "Level 814" as L814
+rectangle "Level 815" as L815
+rectangle "Level 816" as L816
+rectangle "Level 817" as L817
+rectangle "Level 818" as L818
+rectangle "Level 819" as L819
+rectangle "Level 820" as L820
+rectangle "Level 821" as L821
+rectangle "Level 822" as L822
+rectangle "Level 823" as L823
+rectangle "Level 824" as L824
+rectangle "Level 825" as L825
+rectangle "Level 826" as L826
+rectangle "Level 827" as L827
+rectangle "Level 828" as L828
+rectangle "Level 829" as L829
+rectangle "Level 830" as L830
+rectangle "Level 831" as L831
+rectangle "Level 832" as L832
+rectangle "Level 833" as L833
+rectangle "Level 834" as L834
+rectangle "Level 835" as L835
+rectangle "Level 836" as L836
+rectangle "Level 837" as L837
+rectangle "Level 838" as L838
+rectangle "Level 839" as L839
+rectangle "Level 840" as L840
+rectangle "Level 841" as L841
+rectangle "Level 842" as L842
+rectangle "Level 843" as L843
+rectangle "Level 844" as L844
+rectangle "Level 845" as L845
+rectangle "Level 846" as L846
+rectangle "Level 847" as L847
+rectangle "Level 848" as L848
+rectangle "Level 849" as L849
+rectangle "Level 850" as L850
+rectangle "Level 851" as L851
+rectangle "Level 852" as L852
+rectangle "Level 853" as L853
+rectangle "Level 854" as L854
+rectangle "Level 855" as L855
+rectangle "Level 856" as L856
+rectangle "Level 857" as L857
+rectangle "Level 858" as L858
+rectangle "Level 859" as L859
+rectangle "Level 860" as L860
+rectangle "Level 861" as L861
+rectangle "Level 862" as L862
+rectangle "Level 863" as L863
+rectangle "Level 864" as L864
+rectangle "Level 865" as L865
+rectangle "Level 866" as L866
+rectangle "Level 867" as L867
+rectangle "Level 868" as L868
+rectangle "Level 869" as L869
+rectangle "Level 870" as L870
+rectangle "Level 871" as L871
+rectangle "Level 872" as L872
+rectangle "Level 873" as L873
+rectangle "Level 874" as L874
+rectangle "Level 875" as L875
+rectangle "Level 876" as L876
+rectangle "Level 877" as L877
+rectangle "Level 878" as L878
+rectangle "Level 879" as L879
+rectangle "Level 880" as L880
+rectangle "Level 881" as L881
+rectangle "Level 882" as L882
+rectangle "Level 883" as L883
+rectangle "Level 884" as L884
+rectangle "Level 885" as L885
+rectangle "Level 886" as L886
+rectangle "Level 887" as L887
+rectangle "Level 888" as L888
+rectangle "Level 889" as L889
+rectangle "Level 890" as L890
+rectangle "Level 891" as L891
+rectangle "Level 892" as L892
+rectangle "Level 893" as L893
+rectangle "Level 894" as L894
+rectangle "Level 895" as L895
+rectangle "Level 896" as L896
+rectangle "Level 897" as L897
+rectangle "Level 898" as L898
+rectangle "Level 899" as L899
+rectangle "Level 900" as L900
+rectangle "Level 901" as L901
+rectangle "Level 902" as L902
+rectangle "Level 903" as L903
+rectangle "Level 904" as L904
+rectangle "Level 905" as L905
+rectangle "Level 906" as L906
+rectangle "Level 907" as L907
+rectangle "Level 908" as L908
+rectangle "Level 909" as L909
+rectangle "Level 910" as L910
+rectangle "Level 911" as L911
+rectangle "Level 912" as L912
+rectangle "Level 913" as L913
+rectangle "Level 914" as L914
+rectangle "Level 915" as L915
+rectangle "Level 916" as L916
+rectangle "Level 917" as L917
+rectangle "Level 918" as L918
+rectangle "Level 919" as L919
+rectangle "Level 920" as L920
+rectangle "Level 921" as L921
+rectangle "Level 922" as L922
+rectangle "Level 923" as L923
+rectangle "Level 924" as L924
+rectangle "Level 925" as L925
+rectangle "Level 926" as L926
+rectangle "Level 927" as L927
+rectangle "Level 928" as L928
+rectangle "Level 929" as L929
+rectangle "Level 930" as L930
+rectangle "Level 931" as L931
+rectangle "Level 932" as L932
+rectangle "Level 933" as L933
+rectangle "Level 934" as L934
+rectangle "Level 935" as L935
+rectangle "Level 936" as L936
+rectangle "Level 937" as L937
+rectangle "Level 938" as L938
+rectangle "Level 939" as L939
+rectangle "Level 940" as L940
+rectangle "Level 941" as L941
+rectangle "Level 942" as L942
+rectangle "Level 943" as L943
+rectangle "Level 944" as L944
+rectangle "Level 945" as L945
+rectangle "Level 946" as L946
+rectangle "Level 947" as L947
+rectangle "Level 948" as L948
+rectangle "Level 949" as L949
+rectangle "Level 950" as L950
+rectangle "Level 951" as L951
+rectangle "Level 952" as L952
+rectangle "Level 953" as L953
+rectangle "Level 954" as L954
+rectangle "Level 955" as L955
+rectangle "Level 956" as L956
+rectangle "Level 957" as L957
+rectangle "Level 958" as L958
+rectangle "Level 959" as L959
+rectangle "Level 960" as L960
+rectangle "Level 961" as L961
+rectangle "Level 962" as L962
+rectangle "Level 963" as L963
+rectangle "Level 964" as L964
+rectangle "Level 965" as L965
+rectangle "Level 966" as L966
+rectangle "Level 967" as L967
+rectangle "Level 968" as L968
+rectangle "Level 969" as L969
+rectangle "Level 970" as L970
+rectangle "Level 971" as L971
+rectangle "Level 972" as L972
+rectangle "Level 973" as L973
+rectangle "Level 974" as L974
+rectangle "Level 975" as L975
+rectangle "Level 976" as L976
+rectangle "Level 977" as L977
+rectangle "Level 978" as L978
+rectangle "Level 979" as L979
+rectangle "Level 980" as L980
+rectangle "Level 981" as L981
+rectangle "Level 982" as L982
+rectangle "Level 983" as L983
+rectangle "Level 984" as L984
+rectangle "Level 985" as L985
+rectangle "Level 986" as L986
+rectangle "Level 987" as L987
+rectangle "Level 988" as L988
+rectangle "Level 989" as L989
+rectangle "Level 990" as L990
+rectangle "Level 991" as L991
+rectangle "Level 992" as L992
+rectangle "Level 993" as L993
+rectangle "Level 994" as L994
+rectangle "Level 995" as L995
+rectangle "Level 996" as L996
+rectangle "Level 997" as L997
+rectangle "Level 998" as L998
+rectangle "Level 999" as L999
+rectangle "Level 1000" as L1000
+usecase "Level FUN" as FUN
+usecase "The Room" as ROOM
+usecase "The Attic" as ATTIC
+usecase "The Whisper" as WHISPER
+usecase "Level φ: "The Golden Spiral"" as PHI2
+usecase "The Hub" as HUB
+usecase "The Deep End" as TDE
+node "The Void" as TheVoid
+usecase "Level REDACTED: The Downrooms" as LREDACTED
+node "Variety/Majority Levels" as MISC
+
+' CONNECTIONS
+
+    TheFrontrooms --> L0
+    TheFrontrooms --> L1
+    TheFrontrooms --> L2
+
+    L0 <==> L1
+    L0 --> L13
+    L0 --> L14
+    L0 --> L27
+    L0 --> L139
+    L0 --> TheVoid
+
+    L1 <==> L2
+    L1 --> L188
+    L1 <==> HUB
+
+    PHI <==> L1
+    PHI <==> L2
+    PHI --> PHI2
+
+    L2 --> L3
+    L2 --> L4
+    L2 --> L27
+    L2 --> L34
+    L2 --> L477
+    L2 --> L699
+    L2 --> PHI
+
+    L3 <==> L4
+    L3 --> L5
+    L3 --> L6
+    L3 --> L11
+    L3 --> L3S3
+
+    L3S3 <==> L3
+    L3S3 --> L33
+    L3S3 --> L333
+    L3S3 --> L8
+    L3S3 --> L188
+    L3S3 --> L4
+    L3S3 --> PI
+    L3S3 --> L34
+    L3S3 --> L3S2
+    L3S3 --> L4S1
+    L3S3 --> L4S2
+    
+    L4 --> L5
+    L4 --> L6
+    L4 --> L197
+    L4 --> L156
+    L4 --> L14
+    L4 --> TheVoid
+
+    L5 --> L6
+    L5 --> L13
+    L5 --> L188
+    L5 --> L666
+    L5 --> L909
+    L5 --> L5S1
+    L5 --> L5S2
+
+    L6 --> L7
+    L6 --> L6S1
+    L6 --> L8
+
+    L7 --> L8
+    L7 --> L4
+    L7 --> TAU
+    L7 --> L7S1
+    L7 --> L7S2
+    L7 --> L7S3
+    L7 --> L8
+    L7 --> L8S1
+    L7 --> L13
+    L7 --> L37
+    L7 --> L38
+    L7 --> L38S1
+    L7 --> L41
+    L7 --> L49
+    L7 --> L87
+    L7 --> L128
+    L7 --> L147
+    L7 --> L351
+    L7 --> L512
+    L7 --> L833
+
+    L8 <-.-> L9
+    L8 --> MISC
+
+    L9 --> L8S2
+    L9 --> L11
+    L9 --> L10
+    L9 --> L9S1
+    L9 --> L13
+    L9 --> L84
+
+    L10 <==> L11
+    L10 --> L35
+    L10 --> L83
+    L10 --> MISC
+
+    L11 --> L12
+    L11 --> L2
+    L11 --> L75
+    L11 --> L690
+
+    L12 -.-> MISC
+
+    L13 <==> L14
+    L13 --> L45
+    L13 -.-> L1
+    L13 -.-> L909
+    L13 -.-> L996
+    L13 -.-> L173
+    L13 -.-> TheVoid
+
+    L14 --> L777
+    L14 <==> L15
+    L14 --> L16
+    L14 --> L268
+
+    L15 --> L3
+    L15 <==> L16
+    L15 --> L80
+    L15 --> L58
+    L15 --> L6
+    L15 --> L4
+    L15 --> L11
+
+    L16 --> L14
+    L16 --> L17
+    L16 --> L4
+    L16 --> L3
+    L16 --> L96
+    L16 --> L777
+    L16 --> L563
+
+    L17 --> L18
+    L17 --> L7
+    L17 --> L27
+    L17 --> L2
+    L17 --> L54
+    L17 --> L20
+    L17 --> L245
+
+    L18 --> L492
+    L18 --> L52
+    L18 --> L56
+    L18 --> FUN
+    L18 --> ROOM
+    L18 --> L82
+    L18 --> L142
+    L18 --> L701
+    L18 <==> L19
+
+    L19 <==> L20
+    L19 --> L21
+    L19 --> L332
+
+    L20 --> L9
+    L20 --> L21
+    L20 --> L22
+    L20 --> L20S1
+    L20 --> L59
+    L20 --> L412
+    L20 --> L910
+    L20 --> TheVoid
+
+    L21 --> L22
+    L21 --> L139
+    L21 --> MISC
+
+    L22 --> L23
+    L22 --> L630
+    L22 --> L1
+    L22 --> L4
+    L22 --> L21
+    L22 --> L23
+    L22 --> L87
+
+    L23 --> L24
+
+    L24 --> L25
+    L24 --> L15
+    L24 --> L308
+
+    L25 --> L9
+    L25 --> L10
+    L25 --> L11
+    L25 --> L26
+
+    L26 --> ATTIC
+    L26 --> L26S1
+    L26 --> L27
+    L26 --> L42
+    L26 --> L93
+    L26 --> L193
+    L26 --> WHISPER
+
+    L27 --> MISC
+
+    L28 --> L19
+    L28 --> L26
+    L28 --> L29
+    L28 --> L93
+    L28 --> L170
+    L28 --> L25
+    L28 --> L139
+    L28 --> L5
+    L28 --> L12
+    L28 --> L19
+    L28 --> L20
+    L28 --> L42
+    L28 --> L9
+    L28 --> L38
+    L28 --> L597
+    L28 --> L39
+    L28 --> L398
+    L28 --> L139
+
+    L29 --> MISC
+
+    L30 --> L4
+    L30 --> L37
+    L30 --> L84
+    L30 --> L597
+    L30 --> L357
+
+    L37 --> L4
+    L37 --> L34
+    L37 <==> L37S1
+    L37 --> L43
+
+    L37S1 --> TDE
+    L37S1 --> L30
+
+    TheVoid --> LREDACTED
+
+    HUB --> MISC
+    HUB --> L37
+    HUB <==> L154
+
+    TDE -.-> L0

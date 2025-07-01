@@ -1,0 +1,7 @@
+@startuml
+
+node 1 as "setting up this shitty ass VS Code bs"
+node 2 as "Fucking killingmyself"
+Alice -> Bob : hello
+1 --> 2
+@enduml
