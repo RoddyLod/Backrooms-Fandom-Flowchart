@@ -38,6 +38,7 @@ skinparam database {
 ' IDENTIFIERS
 
 database "The Frontrooms" as TheFrontrooms
+database "The Broken" as BROKEN
 rectangle "Level 0: The Lobby" as L0
 rectangle "Level 1: Parking Zone" as L1
 hexagon "Level 1.61" as PHI
