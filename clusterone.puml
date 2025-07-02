@@ -1059,6 +1059,7 @@ rectangle "Level 990" as L990
 rectangle "Level 991" as L991
 rectangle "Level 992" as L992
 rectangle "Level 993" as L993
+hexagon "Level 993.1" as L993S1
 rectangle "Level 994" as L994
 rectangle "Level 995" as L995
 rectangle "Level 996" as L996
@@ -1569,6 +1570,7 @@ node "Random/Variety Levels" as MISC
     L101 --> L53
     L101 --> L86
     L101 --> L102
+    L101 --> L123
     L102 --> L2
     L102 --> L30
     L102 --> L48
@@ -1582,6 +1584,7 @@ node "Random/Variety Levels" as MISC
     L107 --> L330S1
     L107 --> L499
     L107 --> DELTAMALL
+    L107 --> L108
     L108 --> L109
     L108 --> L110
     L108 --> L154
@@ -1605,3 +1608,86 @@ node "Random/Variety Levels" as MISC
     L111  --> L404
     L111  --> L410
     L111  <==> BEGINNING
+
+    L112  --> L10
+    L112  --> L37S1
+    L112  --> L255
+    L112  --> HUB
+    L113  <==> L11
+    L113  --> L55
+    L113  --> L78
+    L113  --> L99
+    L113  --> L114
+    L113  --> L386
+    L113  --> L387
+    L114  --> L156
+    L114  --> L526
+    L115  --> L165
+    L116  --> L0
+    L116  --> L25
+    L116  --> L102
+    L116  --> L500
+    L117  --> L7
+    L117  --> L82
+    L117  --> L120
+    L117  --> L401
+    L117  --> L719
+    L118 --> L218
+    L118 --> L416
+    L118 --> L798
+    L119 --> L2
+    L119 --> L9
+    L119 --> TheVoid
+    L120 --> L82
+    L120 --> L121
+    L121 --> L36
+    L121 --> L1000
+    L121 --> HUB
+    L123 --> L9
+    L123 --> L13
+    L123 --> L16
+    L123 --> L85
+    L124 --> L0
+    L124 --> L7
+    L124 --> L9
+    L124 --> L10
+    L124 --> L11
+    L124 --> L503
+    L124 --> L690
+    L124 --> L941
+    L125 --> L941
+    L126 --> L4
+    L126 --> L5
+    L126 --> L6
+    L126 --> L12
+    L126 --> L27
+    L126 --> L88
+    L126 --> L91
+    L126 --> L610
+    L126 --> L900
+    L127 --> L105
+    L127 --> L147
+    L127 --> L404
+    L127 --> BROKEN
+    L127 --> TheVoid
+    L128 <==> L129
+    L128 --> FUN
+    L128 --> TheVoid
+    L129 --> FUN
+    L129 --> TheVoid
+    L130 <==> L3
+    L130 <==> L4
+    L130 <==> L5
+    L130 <==> L11
+    L130 --> L14
+    L130 --> L21
+
+    ' shadow_slayer9966
+
+    L989 --> L995
+    L989 --> L990
+    L989 --> L993
+
+    L993 <==> ATTIC
+    L993 <==> L993S1
+    L993 --> TheFrontrooms
