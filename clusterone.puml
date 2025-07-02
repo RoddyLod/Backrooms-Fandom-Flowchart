@@ -1076,6 +1076,7 @@ usecase "The Hive" as HIVE
 usecase "The Delta Mall" as DELTAMALL
 usecase "The Beginning" as BEGINNING
 usecase "The Deep End" as TDE
+usecase "The Lurking" as LURKING
 node "The Void" as TheVoid
 usecase "Level REDACTED: The Downrooms" as LREDACTED
 node "Random/Variety Levels" as MISC
