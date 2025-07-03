@@ -1090,6 +1090,7 @@ usecase "The Delta Mall" as DELTAMALL
 usecase "The Beginning" as BEGINNING
 usecase "The Deep End" as TDE
 usecase "The Lurking" as LURKING
+usecase "Uncharted Territory" as Uncharted Territory
 usecase "The Shifting Nexus" as NEXUS
 usecase "The Basement" as BASEMENT
 node "The Void" as TheVoid
@@ -1098,6 +1099,7 @@ usecase "Fragmented Recollections" as RECOLLECTIONS
 usecase "Waste Disposal" as DISPOSAL
 usecase "Absolute Infinity Of Unknown" as ABSOLUTEINFINITY
 usecase "Blue Horizon" as BLUEHORIZON
+usecase "The Game" as TheGame
 node "Random/Variety Levels" as MISC
 
 ' CONNECTIONS
@@ -1505,6 +1507,57 @@ node "Random/Variety Levels" as MISC
     L86 --> L5
     L86 --> L33
     L86 --> L330
+
+    L154 --> L514
+    L154 --> L793
+    L154 <==> TheMetro
+    L154 --> L999
+    L154 <==> L9.1
+    L154 <==> L233
+    L154 --> L798
+    L154 --> L128
+    L154 --> TheBroken
+    L154 <==> L699
+    L154 --> L499
+    L154 <==> TheHub
+    L154 --> L0
+    L154 --> L1
+    L154 --> L11
+    L154 <==> L153
+    L154 <==> BaseAlpha
+    L154 --> LF
+    L154 --> TheSchimmelplatz
+    L154 --> L31
+    L154 --> L0.5
+    L154 --> L4
+    L154 --> L37
+    L154 --> L293
+    L154 --> L6
+    L154 --> L833
+    L154 --> L993
+    L154 --> L100
+    L154 -> L99
+    L154 --> TheBlueSpace
+    L154 --> TheCorruptedInstability
+    L154 --> L264
+    L154 --> L5.1
+    L154 --> TheVoid
+    L154 --> L188.1
+    L154 --> TheWhisper
+    L154 --> BlueHorizon
+    L154 --> TheDeltaMall
+    L154 --> L293
+    L154 --> L711
+    L154 --> L0.99
+    L154 --> OneState
+    L154 --> L399
+    L154 --> ABSOLUTEINFINITY
+    L154 --> L888
+    L154 --> UnchartedTerritory
+    L154 --> L2
+    L154 --> L698
+    L154 <==> TheGame
+    L154 <==> L154.1
 
     RECOLLECTIONS --> L87
     L630 --> L87
