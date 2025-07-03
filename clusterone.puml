@@ -117,6 +117,7 @@ rectangle "Level 52" as L52
 rectangle "Level 53" as L53
 rectangle "Level 54" as L54
 rectangle "Level 55" as L55
+hexagon "Level 55.1" as L55S1
 rectangle "Level 56" as L56
 rectangle "Level 57" as L57
 rectangle "Level 58" as L58
@@ -147,6 +148,7 @@ rectangle "Level 82" as L82
 rectangle "Level 83" as L83
 rectangle "Level 84" as L84
 rectangle "Level 85" as L85
+hexagon "Level 85.1" as L85S1
 rectangle "Level 86" as L86
 rectangle "Level 87" as L87
 rectangle "Level 88" as L88
@@ -202,10 +204,12 @@ rectangle "Level 136" as L136
 rectangle "Level 137" as L137
 rectangle "Level 138" as L138
 rectangle "Level 139" as L139
+hexagon "Level 139.5" as L139S1
 rectangle "Level 140" as L140
 rectangle "Level 141" as L141
 rectangle "Level 142" as L142
 rectangle "Level 143" as L143
+hexagon "Level 143.1" as L143S1
 rectangle "Level 144" as L144
 rectangle "Level 145" as L145
 rectangle "Level 146" as L146
@@ -217,6 +221,7 @@ rectangle "Level 151" as L151
 rectangle "Level 152" as L152
 rectangle "Level 153" as L153
 rectangle "Level 154" as L154
+hexagon "Level 154.1" as L154S1
 rectangle "Level 155" as L155
 rectangle "Level 156" as L156
 rectangle "Level 157" as L157
@@ -251,6 +256,8 @@ rectangle "Level 185" as L185
 rectangle "Level 186" as L186
 rectangle "Level 187" as L187
 rectangle "Level 188" as L188
+hexagon "Level 188.1" as L188S1
+hexagon "Level 188.8" as L188S2
 rectangle "Level 189" as L189
 rectangle "Level 190" as L190
 rectangle "Level 191" as L191
@@ -475,6 +482,7 @@ rectangle "Level 407" as L407
 rectangle "Level 408" as L408
 rectangle "Level 409" as L409
 rectangle "Level 410" as L410
+hexagon "Level 410.7" as L410S1
 rectangle "Level 411" as L411
 rectangle "Level 412" as L412
 rectangle "Level 413" as L413
@@ -533,6 +541,7 @@ rectangle "Level 465" as L465
 rectangle "Level 466" as L466
 rectangle "Level 467" as L467
 rectangle "Level 468" as L468
+hexagon "Level 468.1" as L468S1
 rectangle "Level 469" as L469
 rectangle "Level 470" as L470
 rectangle "Level 471" as L471
@@ -1072,14 +1081,23 @@ usecase "The Room" as ROOM
 usecase "The Attic" as ATTIC
 usecase "The Whisper" as WHISPER
 usecase "Level φ: "The Golden Spiral"" as PHI2
+usecase "Level !" as RUN
+usecase "The End" as THEEND
+usecase "The Red Rooms" as REDROOMS
 usecase "The Hub" as HUB
 usecase "The Hive" as HIVE
 usecase "The Delta Mall" as DELTAMALL
 usecase "The Beginning" as BEGINNING
 usecase "The Deep End" as TDE
 usecase "The Lurking" as LURKING
+usecase "The Shifting Nexus" as NEXUS
+usecase "The Basement" as BASEMENT
 node "The Void" as TheVoid
 usecase "Level REDACTED: The Downrooms" as LREDACTED
+usecase "Fragmented Recollections" as RECOLLECTIONS
+usecase "Waste Disposal" as DISPOSAL
+usecase "Absolute Infinity Of Unknown" as ABSOLUTEINFINITY
+usecase "Blue Horizon" as BLUEHORIZON
 node "Random/Variety Levels" as MISC
 
 ' CONNECTIONS
@@ -1425,6 +1443,93 @@ node "Random/Variety Levels" as MISC
 
     TDE -.-> L0
 
+    L80 --> L81
+    L96 --> L81
+    L525 --> L81
+    NEXUS --> L81
+
+    L81 --> L82
+    L81 --> L610
+    L81 --> L13
+    L81 --> BASEMENT
+
+    L91 --> L82
+    L38 --> L82
+    L18 --> L82
+    L117 --> L82
+    L8 --> L82
+
+    L82 --> L124
+    L82 --> L289
+    L82 --> L810
+    L82 --> L306
+
+    L10 --> L83
+
+    L83 --> MISC : "Safe Levels"
+    L83 --> L186
+    L83 --> L84
+
+    L11 --> L84
+    L30 --> L84
+    L83 --> L84
+    L9 --> L84
+
+    L84 --> L85
+    L84 --> L265
+    L84 --> L198
+    L84 --> L410
+
+    MISC --> L85 : "60's Style Regions"
+    L11 --> L85
+    L35 --> L85
+    L84 --> L85
+    L123 --> L85
+    L222 --> L85
+    L400 --> L85
+    L999 --> L85
+
+    L85 --> L8
+    L85 --> L87
+    L85 --> L100
+
+    TheFrontrooms --> L86
+    L85 --> L86
+    L85S1 --> L86
+    L0 --> L86
+    L610 --> L86
+
+    L86 --> L87
+    L86 --> L1
+    L86 --> L2
+    L86 --> L5
+    L86 --> L33
+    L86 --> L330
+
+    RECOLLECTIONS --> L87
+    L630 --> L87
+    L7 --> L87
+    L22 --> L87
+    L85 --> L87
+
+    L610 --> L88
+    L11 --> L88
+    L406 --> L88
+    L43 --> L88
+    L570 --> L88
+
+    L88 --> L11
+    L88 --> HUB
+    L88 --> L7
+
+    L3 --> L89
+    L88 --> L89
+
+    L89 --> L90
+    L89 --> L444
+
+    L90 --> L91
+
     ' heyheyhey0749_09363
 
     L255 -.-> L7
@@ -1681,6 +1786,134 @@ node "Random/Variety Levels" as MISC
     L130 <==> L11
     L130 --> L14
     L130 --> L21
+
+    L1 --> L119
+    L131 <==> L9
+    L131 --> L330
+    L132 --> L0
+    L133 <==> L150
+    L134 <==> L11
+    L134 --> L133
+    L134 --> L399
+    L134 <==> L610
+    L135 --> L468S1
+    L135 --> L136
+    L136 --> L82
+    L136 --> L351
+    L137 --> L916
+    L138 --> L2
+    L138 --> L4
+    L138 --> L11
+    L139 --> L6
+    L139 --> L139S1
+    L139 --> BROKEN
+    L139 --> TheVoid
+    L139S1 --> TheVoid
+    L140 --> L24
+    L140 --> L203
+    L141 --> L37
+    L141 --> L671
+    L142 --> L60
+    L142 --> L143
+    L143 --> PHI
+    L143 --> L3
+    L143 --> L4
+    L143 <==> L143S1
+    L143S1 --> L4
+    L143S1 --> BROKEN
+    L143S1 --> TheVoid
+    L144 --> L137
+    L144 --> L138
+    L144 --> L385
+    L144 --> L690
+    L144 --> L899
+    L144 --> TheVoid
+    L145 --> L202S1
+    L146 --> L147
+    L147 --> L148
+    L148 --> L149
+    L148 --> L181
+    L148 --> L698
+    L148 --> L857
+    L149 --> L150
+    L150 --> L13
+    L150 --> L37
+    L150 --> TheVoid
+
+    L995 --> ABSOLUTEINFINITY
+    L995 --> BLUEHORIZON
+    L995 --> L0
+    L995 --> L1
+    L995 --> L2
+    L995 --> L3
+    L995 --> L4
+    L995 --> L5S1
+    L995 --> L5S2
+    L995 --> L6
+    L995 --> L7
+    L995 --> L8
+    L995 --> L9
+    L995 --> L10
+    L995 --> L11
+    L995 --> L14
+    L995 --> L16
+    L995 --> L20
+    L995 --> L22
+    L995 --> L24
+    L995 --> L26S1
+    L995 --> L27
+    L995 --> L34
+    L995 --> L37
+    L995 --> L37S1
+    L995 --> L38
+    L995 --> L39
+    L995 --> L41
+    L995 --> L47
+    L995 --> L55S1
+    L995 --> L70
+    L995 --> L82
+    L995 --> L85
+    L995 --> L87
+    L995 --> L93
+    L995 --> L154S1
+    L995 --> L174
+    L995 --> L188
+    L995 --> L188S1
+    L995 --> L188S2
+    L995 --> L221
+    L995 --> L280
+    L995 --> L323
+    L995 --> L330
+    L995 --> L353
+    L995 --> L398
+    L995 --> L399
+    L995 --> L410
+    L995 --> L410S1
+    L995 --> L503
+    L995 --> L514
+    L995 --> L522
+    L995 --> L595
+    L995 --> L606
+    L995 --> L630
+    L995 --> L638
+    L995 --> L650
+    L995 --> L666
+    L995 --> L699
+    L995 --> L777
+    L995 --> L798
+    L995 --> L833
+    L995 --> L888
+    L995 --> L969
+    L995 --> L986
+    L995 --> L993
+    L995 --> L996
+    L995 --> L998
+    L995 --> FUN
+    L995 --> RUN
+    L995 --> REDROOMS
+    L995 --> THEEND
+    L995 --> TheVoid
+    L995 --> DISPOSAL
 
     ' shadow_slayer9966
 

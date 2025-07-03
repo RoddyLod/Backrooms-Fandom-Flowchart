@@ -6,29 +6,61 @@ const fs = require('fs');
     const page = await browser.newPage();
 
     const svgContent = fs.readFileSync('input.svg', 'utf8');
-    await page.setContent(`<html><body style="margin:0;display:flex;justify-content:center;align-items:center;">${svgContent}</body></html>`, {
-        waitUntil: 'load'
-    });
+    await page.setContent(`
+        <html>
+        <body style="margin:0; overflow:scroll;">
+            <div id="container">${svgContent}</div>
+        </body>
+        </html>
+    `, { waitUntil: 'load' });
 
-    // Wait for SVG to load and measure its size in the browser context
-    const svgDimensions = await page.evaluate(() => {
+    // Get real SVG dimensions
+    const svgSize = await page.evaluate(() => {
         const svg = document.querySelector('svg');
         const bbox = svg.getBBox();
         return {
-            width: Math.ceil(bbox.width + bbox.x),
-            height: Math.ceil(bbox.height + bbox.y)
+            width: Math.floor(bbox.x + bbox.width),
+            height: Math.floor(bbox.y + bbox.height)
         };
     });
 
-    await page.setViewport({
-        width: svgDimensions.width,
-        height: svgDimensions.height
-    });
+    const tileSize = 4000;
+    let tileCount = 0;
 
-    // Screenshot the exact SVG
-    const svgElement = await page.$('svg');
-    await svgElement.screenshot({ path: 'output.png' });
+    for (let y = 0; y < svgSize.height; y += tileSize) {
+        for (let x = 0; x < svgSize.width; x += tileSize) {
+            const width = Math.min(tileSize, svgSize.width - x);
+            const height = Math.min(tileSize, svgSize.height - y);
+
+            if (width <= 0 || height <= 0) {
+                console.warn(`⚠️ Skipped invalid tile: ${x},${y}`);
+                continue;
+            }
+
+            const tileName = `tile-${x}-${y}.png`;
+            console.log(`🖼️ Rendering ${tileName} (${width}x${height})...`);
+
+            await page.setViewport({ width, height });
+
+            // Scroll to position to bring the correct SVG area into view
+            await page.evaluate((scrollX, scrollY) => {
+                window.scrollTo(scrollX, scrollY);
+            }, x, y);
+
+            try {
+                await page.screenshot({
+                    path: tileName,
+                    captureBeyondViewport: false,
+                    omitBackground: false
+                });
+                tileCount++;
+            } catch (err) {
+                console.error(`❌ Failed at ${tileName} (x=${x}, y=${y}, w=${width}, h=${height})`);
+                throw err;
+            }
+        }
+    }
 
     await browser.close();
-    console.log(`✅ COMPLETE! Saved output.png at ${svgDimensions.width}×${svgDimensions.height}`);
+    console.log(`✅ Done! Rendered ${tileCount} tile(s).`);
 })();
