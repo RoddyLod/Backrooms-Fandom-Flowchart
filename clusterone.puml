@@ -1100,6 +1100,7 @@ usecase "The One State" as ONESTATE
 usecase "Uncharted Territory" as UNCHARTED
 usecase "The Shifting Nexus" as NEXUS
 usecase "The Basement" as BASEMENT
+usecase "The Long Ride" as LONGRIDE
 node "The Void" as TheVoid
 usecase "Level REDACTED: The Downrooms" as LREDACTED
 usecase "Fragmented Recollections" as RECOLLECTIONS
@@ -1107,7 +1108,7 @@ usecase "Waste Disposal" as DISPOSAL
 usecase "Absolute Infinity Of Unknown" as ABSOLUTEINFINITY
 usecase "Blue Horizon" as BLUEHORIZON
 usecase "The Game" as GAME
-node "Random/Variety Levels" as MISC
+node "Random/Variety of Levels" as MISC
 
 ' CONNECTIONS
 
@@ -1538,6 +1539,42 @@ node "Random/Variety Levels" as MISC
     L89 --> L444
 
     L90 --> L91
+    FUN --> L91
+    L35 --> L91
+    L11 --> L91
+    L671 <==> L91
+    L600 --> L91
+
+    L91 --> L37
+    L91 --> L93
+    L91 --> L41
+    L91 --> L50
+    L91 --> L11
+    L91 --> L85
+    L91 --> L690
+    L91 --> L9
+    L91 --> L306
+    L91 --> L111
+    L91 --> L82
+    L91 --> L38
+    L91 --> L17
+    L91 --> L754
+    L91 --> HUB
+    L91 -.-> LONGRIDE
+
+    MISC <==> L92
+    
+    L92 --> L420
+    L92 --> TheVoid
+    L92 --> L322
+
+    L42 --> L93
+    L334 --> L93
+
+    L93 --> L0
+    L93 --> L998
+
+
 
     ' heyheyhey0749_09363
 
