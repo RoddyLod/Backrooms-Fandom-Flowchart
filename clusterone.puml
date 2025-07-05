@@ -40,35 +40,35 @@ skinparam database {
 database "The Frontrooms" as TheFrontrooms
 database "The Broken" as BROKEN
 rectangle "Level 0: The Lobby" as L0
-hexagon "Level 0.5" as L0S1
-hexagon "Level 0.99" as L0S2
+hexagon "Level 0.5" as L0D5
+hexagon "Level 0.99" as L0D99
 rectangle "Level 1: Parking Zone" as L1
 hexagon "Level 1.61" as PHI
 rectangle "Level 2: Pipe Dreams" as L2
 rectangle "Level 3: Electrical Station" as L3
 hexagon "Level 3.14" as PI
-hexagon "Level 3.53" as L3S2
-hexagon "Level 3.6" as L3S3
+hexagon "Level 3.53" as L3D53
+hexagon "Level 3.6" as L3D6
 rectangle "Level 4: The Abandoned Office" as L4
-hexagon "Level 4.11" as L4S1
-hexagon "Level 4.3" as L4S2
+hexagon "Level 4.11" as L4D11
+hexagon "Level 4.3" as L4D3
 rectangle "Level 5: Terror Hotel" as L5
-hexagon "Level 5.1" as L5S1
-hexagon "Level 5.3" as L5S2
+hexagon "Level 5.1" as L5D1
+hexagon "Level 5.3" as L5D3
 rectangle "Level 6: Lights Out" as L6
-hexagon "Level 6.1" as L6S1
+hexagon "Level 6.1" as L6D1
 hexagon "Level 6.28" as TAU
 rectangle "Level 7: Thalassophobia" as L7
-hexagon "Level 7.1" as L7S1
-hexagon "Level 7.5" as L7S2
-hexagon "Level 7.7" as L7S3
+hexagon "Level 7.1" as L7D1
+hexagon "Level 7.5" as L7D5
+hexagon "Level 7.7" as L7D7
 rectangle "Level 8: Cave System" as L8
-hexagon "Level 8.2" as L8S1
-hexagon "Level 8.4" as L8S2
-hexagon "Level 8.5" as L8S3
+hexagon "Level 8.2" as L8D2
+hexagon "Level 8.4" as L8D4
+hexagon "Level 8.5" as L8D5
 rectangle "Level 9: Darkened Suburbs" as L9
-hexagon "Level 9.1" as L9S1
-hexagon "Level 9.6" as L9S2
+hexagon "Level 9.1" as L9D1
+hexagon "Level 9.6" as L9D6
 rectangle "Level 10: The Bumper Crop" as L10
 rectangle "Level 11: Concrete Jungle" as L11
 rectangle "Level 12: MATRIX" as L12
@@ -80,14 +80,14 @@ rectangle "Level 17" as L17
 rectangle "Level 18" as L18
 rectangle "Level 19" as L19
 rectangle "Level 20" as L20
-hexagon "Level 20.1" as L20S1
+hexagon "Level 20.1" as L20D1
 rectangle "Level 21" as L21
 rectangle "Level 22" as L22
 rectangle "Level 23" as L23
 rectangle "Level 24" as L24
 rectangle "Level 25" as L25
 rectangle "Level 26" as L26
-hexagon "Level 26.1" as L26S1
+hexagon "Level 26.1" as L26D1
 rectangle "Level 27: Ligneous Desolation" as L27
 rectangle "Level 28" as L28
 rectangle "Level 29" as L29
@@ -99,9 +99,9 @@ rectangle "Level 34" as L34
 rectangle "Level 35" as L35
 rectangle "Level 36" as L36
 rectangle "Level 37: Sublimity" as L37
-hexagon "Level 37.1: The Deep End" as L37S1
+hexagon "Level 37.1: The Deep End" as L37D1
 rectangle "Level 38" as L38
-hexagon "Level 38.1" as L38S1
+hexagon "Level 38.1" as L38D1
 rectangle "Level 39" as L39
 rectangle "Level 40" as L40
 rectangle "Level 41" as L41
@@ -119,7 +119,7 @@ rectangle "Level 52" as L52
 rectangle "Level 53" as L53
 rectangle "Level 54" as L54
 rectangle "Level 55" as L55
-hexagon "Level 55.1" as L55S1
+hexagon "Level 55.1" as L55D1
 rectangle "Level 56" as L56
 rectangle "Level 57" as L57
 rectangle "Level 58" as L58
@@ -150,7 +150,7 @@ rectangle "Level 82" as L82
 rectangle "Level 83" as L83
 rectangle "Level 84" as L84
 rectangle "Level 85" as L85
-hexagon "Level 85.1" as L85S1
+hexagon "Level 85.1" as L85D1
 rectangle "Level 86" as L86
 rectangle "Level 87" as L87
 rectangle "Level 88" as L88
@@ -168,7 +168,7 @@ rectangle "Level 99" as L99
 rectangle "Level 100" as L100
 rectangle "Level 101" as L101
 rectangle "Level 102" as L102
-hexagon "Level 102.1" as L102S1
+hexagon "Level 102.1" as L102D1
 rectangle "Level 103" as L103
 rectangle "Level 104" as L104
 rectangle "Level 105" as L105
@@ -206,12 +206,12 @@ rectangle "Level 136" as L136
 rectangle "Level 137" as L137
 rectangle "Level 138" as L138
 rectangle "Level 139" as L139
-hexagon "Level 139.5" as L139S1
+hexagon "Level 139.5" as L139D1
 rectangle "Level 140" as L140
 rectangle "Level 141" as L141
 rectangle "Level 142" as L142
 rectangle "Level 143" as L143
-hexagon "Level 143.1" as L143S1
+hexagon "Level 143.1" as L143D1
 rectangle "Level 144" as L144
 rectangle "Level 145" as L145
 rectangle "Level 146" as L146
@@ -223,7 +223,7 @@ rectangle "Level 151" as L151
 rectangle "Level 152" as L152
 rectangle "Level 153" as L153
 rectangle "Level 154" as L154
-hexagon "Level 154.1" as L154S1
+hexagon "Level 154.1" as L154D1
 rectangle "Level 155" as L155
 rectangle "Level 156" as L156
 rectangle "Level 157" as L157
@@ -258,8 +258,8 @@ rectangle "Level 185" as L185
 rectangle "Level 186" as L186
 rectangle "Level 187" as L187
 rectangle "Level 188" as L188
-hexagon "Level 188.1" as L188S1
-hexagon "Level 188.8" as L188S2
+hexagon "Level 188.1" as L188D1
+hexagon "Level 188.8" as L188D8
 rectangle "Level 189" as L189
 rectangle "Level 190" as L190
 rectangle "Level 191" as L191
@@ -274,7 +274,7 @@ rectangle "Level 199" as L199
 rectangle "Level 200" as L200
 rectangle "Level 201" as L201
 rectangle "Level 202" as L202
-hexagon "Level 202.1" as L202S1
+hexagon "Level 202.1" as L202D1
 rectangle "Level 203" as L203
 rectangle "Level 204" as L204
 rectangle "Level 205" as L205
@@ -403,7 +403,7 @@ rectangle "Level 327" as L327
 rectangle "Level 328" as L328
 rectangle "Level 329" as L329
 rectangle "Level 330" as L330
-hexagon "Level 330.1" as L330S1
+hexagon "Level 330.1" as L330D1
 rectangle "Level 331" as L331
 rectangle "Level 332" as L332
 rectangle "Level 333" as L333
@@ -484,7 +484,7 @@ rectangle "Level 407" as L407
 rectangle "Level 408" as L408
 rectangle "Level 409" as L409
 rectangle "Level 410" as L410
-hexagon "Level 410.7" as L410S1
+hexagon "Level 410.7" as L410D7
 rectangle "Level 411" as L411
 rectangle "Level 412" as L412
 rectangle "Level 413" as L413
@@ -543,7 +543,7 @@ rectangle "Level 465" as L465
 rectangle "Level 466" as L466
 rectangle "Level 467" as L467
 rectangle "Level 468" as L468
-hexagon "Level 468.1" as L468S1
+hexagon "Level 468.1" as L468D1
 rectangle "Level 469" as L469
 rectangle "Level 470" as L470
 rectangle "Level 471" as L471
@@ -731,7 +731,7 @@ rectangle "Level 652" as L652
 rectangle "Level 653" as L653
 rectangle "Level 654" as L654
 rectangle "Level 655" as L655
-hexagon "Level 655.5" as L655S1
+hexagon "Level 655.5" as L655D5
 rectangle "Level 656" as L656
 rectangle "Level 657" as L657
 rectangle "Level 658" as L658
@@ -1070,7 +1070,7 @@ rectangle "Level 990" as L990
 rectangle "Level 991" as L991
 rectangle "Level 992" as L992
 rectangle "Level 993" as L993
-hexagon "Level 993.1" as L993S1
+hexagon "Level 993.1" as L993D1
 rectangle "Level 994" as L994
 rectangle "Level 995" as L995
 rectangle "Level 996" as L996
@@ -1092,7 +1092,7 @@ usecase "The Metro" as METRO
 usecase "The Corrupted Instability" as INSTABILITY
 usecase "The Delta Mall" as DELTAMALL
 usecase "The Beginning" as BEGINNING
-usecase "The Deep End" as TDE
+usecase "The Deep End" as DEEPEND
 usecase "The Lurking" as LURKING
 usecase "The Blue Space" as BLUESPACE
 usecase "The Schimmelplatz" as SCHIMMELPLATZ
@@ -1142,19 +1142,19 @@ node "Random/Variety Levels" as MISC
     L3 --> L5
     L3 --> L6
     L3 --> L11
-    L3 --> L3S3
+    L3 --> L3D6
 
-    L3S3 <==> L3
-    L3S3 --> L33
-    L3S3 --> L333
-    L3S3 --> L8
-    L3S3 --> L188
-    L3S3 --> L4
-    L3S3 --> PI
-    L3S3 --> L34
-    L3S3 --> L3S2
-    L3S3 --> L4S1
-    L3S3 --> L4S2
+    L3D6 <==> L3
+    L3D6 --> L33
+    L3D6 --> L333
+    L3D6 --> L8
+    L3D6 --> L188
+    L3D6 --> L4
+    L3D6 --> PI
+    L3D6 --> L34
+    L3D6 --> L3D53
+    L3D6 --> L4D11
+    L3D6 --> L4D3
     
     L4 --> L5
     L4 --> L6
@@ -1168,25 +1168,25 @@ node "Random/Variety Levels" as MISC
     L5 --> L188
     L5 --> L666
     L5 --> L909
-    L5 --> L5S1
-    L5 --> L5S2
+    L5 --> L5D1
+    L5 --> L5D3
 
     L6 --> L7
-    L6 --> L6S1
+    L6 --> L6D1
     L6 --> L8
 
     L7 --> L8
     L7 --> L4
     L7 --> TAU
-    L7 --> L7S1
-    L7 --> L7S2
-    L7 --> L7S3
+    L7 --> L7D1
+    L7 --> L7D5
+    L7 --> L7D7
     L7 --> L8
-    L7 --> L8S1
+    L7 --> L8D2
     L7 --> L13
     L7 --> L37
     L7 --> L38
-    L7 --> L38S1
+    L7 --> L38D1
     L7 --> L41
     L7 --> L49
     L7 --> L87
@@ -1196,13 +1196,13 @@ node "Random/Variety Levels" as MISC
     L7 --> L512
     L7 --> L833
 
-    L8 <-.-> L9
+    L8 --> L9
     L8 --> MISC : "Aquatic Levels"
 
-    L9 --> L8S2
+    L9 --> L8D4
     L9 --> L11
     L9 --> L10
-    L9 --> L9S1
+    L9 --> L9D1
     L9 --> L13
     L9 --> L84
 
@@ -1272,7 +1272,7 @@ node "Random/Variety Levels" as MISC
     L20 --> L9
     L20 --> L21
     L20 --> L22
-    L20 --> L20S1
+    L20 --> L20D1
     L20 --> L59
     L20 --> L412
     L20 --> L910
@@ -1302,7 +1302,7 @@ node "Random/Variety Levels" as MISC
     L25 --> L26
 
     L26 --> ATTIC
-    L26 --> L26S1
+    L26 --> L26D1
     L26 --> L27
     L26 --> L42
     L26 --> L93
@@ -1438,11 +1438,11 @@ node "Random/Variety Levels" as MISC
 
     L37 --> L4
     L37 --> L34
-    L37 <==> L37S1
+    L37 <==> L37D1
     L37 --> L43
 
-    L37S1 --> TDE
-    L37S1 --> L30
+    L37D1 --> DEEPEND
+    L37D1 --> L30
 
     TheVoid --> LREDACTED
 
@@ -1450,7 +1450,7 @@ node "Random/Variety Levels" as MISC
     HUB --> L37
     HUB <==> L154
 
-    TDE -.-> L0
+    DEEPEND -.-> L0
 
     L80 --> L81
     L96 --> L81
@@ -1504,7 +1504,7 @@ node "Random/Variety Levels" as MISC
 
     TheFrontrooms --> L86
     L85 --> L86
-    L85S1 --> L86
+    L85D1 --> L86
     L0 --> L86
     L610 --> L86
 
@@ -1548,7 +1548,7 @@ node "Random/Variety Levels" as MISC
     L354 --> L355
     L355 --> L106
     L355 --> L8
-    L355 --> L8S3
+    L355 --> L8D5
 
     L156 --> L655
     L655 --> L5
@@ -1557,13 +1557,13 @@ node "Random/Variety Levels" as MISC
     L655 --> L330
     L655 --> L28
     L655 --> L877
-    L655 <==> L655S1
+    L655 <==> L655D5
 
     L986 --> L655
     L655 --> L7
     L655 --> L330
     L655 --> L37
-    L655 --> L3S3
+    L655 --> L3D6
 
     ' speariv350
 
@@ -1591,7 +1591,7 @@ node "Random/Variety Levels" as MISC
 		L41 --> L6
 		L41 --> L14
 		L41 --> L22
-		L41 --> L9S2
+		L41 --> L9D6
 		L41 --> L17
 		L41 --> L207
 
@@ -1628,9 +1628,9 @@ node "Random/Variety Levels" as MISC
 		L43 --> MISC
 
 		MISC --> L44 : "Doors"
-		L202S1 --> L44
+		L202D1 --> L44
 		L202 -.-> L44
-		L38S1 --> L44
+		L38D1 --> L44
 
 		L44 --> L30
 		L44 --> L37
@@ -1640,7 +1640,7 @@ node "Random/Variety Levels" as MISC
 		L13 --> L45
 		L39 --> L45
 		LURKING --> L45
-		L9S2 --> L45
+		L9D6 --> L45
 		L887 --> L45
 
 		L45 --> HIVE
@@ -1665,7 +1665,7 @@ node "Random/Variety Levels" as MISC
 		L46 --> L0
 
 		L4 <==> L47
-		L4S2 <==> L47
+		L4D3 <==> L47
 		L46 --> L47
 
 		L47 --> L0
@@ -1688,14 +1688,14 @@ node "Random/Variety Levels" as MISC
     L102 --> L2
     L102 --> L30
     L102 --> L48
-    L102 <==> L102S1
+    L102 <==> L102D1
     L102 --> L330
     L102 --> L416
     L102 --> L597
     L105 --> L200
     L106 --> L45
     L106 --> L255
-    L107 --> L330S1
+    L107 --> L330D1
     L107 --> L499
     L107 --> DELTAMALL
     L107 --> L108
@@ -1724,7 +1724,7 @@ node "Random/Variety Levels" as MISC
     L111  <==> BEGINNING
 
     L112  --> L10
-    L112  --> L37S1
+    L112  --> L37D1
     L112  --> L255
     L112  --> HUB
     L113  <==> L11
@@ -1805,7 +1805,7 @@ node "Random/Variety Levels" as MISC
     L134 --> L133
     L134 --> L399
     L134 <==> L610
-    L135 --> L468S1
+    L135 --> L468D1
     L135 --> L136
     L136 --> L82
     L136 --> L351
@@ -1814,10 +1814,10 @@ node "Random/Variety Levels" as MISC
     L138 --> L4
     L138 --> L11
     L139 --> L6
-    L139 --> L139S1
+    L139 --> L139D1
     L139 --> BROKEN
     L139 --> TheVoid
-    L139S1 --> TheVoid
+    L139D1 --> TheVoid
     L140 --> L24
     L140 --> L203
     L141 --> L37
@@ -1827,17 +1827,17 @@ node "Random/Variety Levels" as MISC
     L143 --> PHI
     L143 --> L3
     L143 --> L4
-    L143 <==> L143S1
-    L143S1 --> L4
-    L143S1 --> BROKEN
-    L143S1 --> TheVoid
+    L143 <==> L143D1
+    L143D1 --> L4
+    L143D1 --> BROKEN
+    L143D1 --> TheVoid
     L144 --> L137
     L144 --> L138
     L144 --> L385
     L144 --> L690
     L144 --> L899
     L144 --> TheVoid
-    L145 --> L202S1
+    L145 --> L202D1
     L146 --> L147
     L147 --> L148
     L148 --> L149
@@ -1856,8 +1856,8 @@ node "Random/Variety Levels" as MISC
     L995 --> L2
     L995 --> L3
     L995 --> L4
-    L995 --> L5S1
-    L995 --> L5S2
+    L995 --> L5D1
+    L995 --> L5D3
     L995 --> L6
     L995 --> L7
     L995 --> L8
@@ -1869,26 +1869,26 @@ node "Random/Variety Levels" as MISC
     L995 --> L20
     L995 --> L22
     L995 --> L24
-    L995 --> L26S1
+    L995 --> L26D1
     L995 --> L27
     L995 --> L34
     L995 --> L37
-    L995 --> L37S1
+    L995 --> L37D1
     L995 --> L38
     L995 --> L39
     L995 --> L41
     L995 --> L47
-    L995 --> L55S1
+    L995 --> L55D1
     L995 --> L70
     L995 --> L82
     L995 --> L85
     L995 --> L87
     L995 --> L93
-    L995 --> L154S1
+    L995 --> L154D1
     L995 --> L174
     L995 --> L188
-    L995 --> L188S1
-    L995 --> L188S2
+    L995 --> L188D1
+    L995 --> L188D8
     L995 --> L221
     L995 --> L280
     L995 --> L323
@@ -1897,7 +1897,7 @@ node "Random/Variety Levels" as MISC
     L995 --> L398
     L995 --> L399
     L995 --> L410
-    L995 --> L410S1
+    L995 --> L410D7
     L995 --> L503
     L995 --> L514
     L995 --> L522
@@ -1931,14 +1931,14 @@ node "Random/Variety Levels" as MISC
     L989 --> L993
 
     L993 <==> ATTIC
-    L993 <==> L993S1
+    L993 <==> L993D1
     L993 --> TheFrontrooms
 
     L154 --> L514
     L154 --> L793
     L154 <==> TheMetro
     L154 --> L999
-    L154 <==> L9S1
+    L154 <==> L9D1
     L154 <==> L233
     L154 --> L798
     L154 --> L128
@@ -1954,7 +1954,7 @@ node "Random/Variety Levels" as MISC
     L154 --> LF
     L154 --> SCHIMMELPLATZ
     L154 --> L31
-    L154 --> L0S1
+    L154 --> L0D5
     L154 --> L4
     L154 --> L37
     L154 --> L293
@@ -1966,7 +1966,7 @@ node "Random/Variety Levels" as MISC
     L154 --> BLUESPACE
     L154 --> INSTABILITY
     L154 --> L264
-    L154 --> L5S1
+    L154 --> L5D1
     L154 --> TheVoid
     L154 --> L188.1
     L154 --> WHISPER
@@ -1974,7 +1974,7 @@ node "Random/Variety Levels" as MISC
     L154 --> DELTAMALL
     L154 --> L293
     L154 --> L711
-    L154 --> L0S2
+    L154 --> L0D99
     L154 --> ONESTATE
     L154 --> L399
     L154 --> ABSOLUTEINFINITY
@@ -1983,4 +1983,4 @@ node "Random/Variety Levels" as MISC
     L154 --> L2
     L154 --> L698
     L154 <==> GAME
-    L154 <==> L154S1
+    L154 <==> L154D1
